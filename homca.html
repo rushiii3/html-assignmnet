@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" style="text/css" href="hg.css">
+    <title>Calci2</title>
+</head>
+<script>
+function sq(){
+var result;
+no=Number(document.getElementById("num").value);
+
+result=no*no;
+document.getElementById("answer").value=result;
+}
+function cub(){
+var result1;
+no4=Number(document.getElementById("num4").value);
+result1=no4*no4*no4;
+document.getElementById("answer1").value=result1;
+}
+function fact(){
+var i, no, f;
+f=1;
+no=Number(document.getElementById("fc").value);
+for(i=1; i<=no ;i++)
+{
+f=f*i;
+}
+document.getElementById("ansi").value=f;
+}
+</script>
+</head>
+<body>
+    <p id="aa">
+        Calculator
+    </p>
+    <table  id="ab">
+        <tr> 
+            <td  id="ac">
+                <p id="ad">
+                    <h1>SQUARE
+                    </h1>
+                Enter Number : <input id="num" ><br />
+                <button onclick="sq()">SQUARE</button><br />
+                <input id="answer"> <br />
+                </p>
+            </td>
+            <td id="ac">
+                <p id="ad">
+                    <h1>CUBE</h1>
+                Enter Number : <input id="num4"><br />
+                <button onclick="cub()">CUBE</button><br />
+                <input id="answer1"><br />
+            </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="ac">
+                <p  id="ad">
+                    <h1>FACTORIAL</h1>
+                    Enter Number : <input type = "text" id="fc" ><br />
+                    <button onclick="fact()" >FACTORIAL</button><br />
+                    <input type ="text" id="ansi"><br>
+                </p>
+            </td>
+        </tr>
+    </table>    
+
+
+</body>
+</html>

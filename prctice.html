@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calci</title> 
+<style>
+#e{
+    padding:30px;
+
+}
+</style>
+</head> 
+<body>
+    <script>
+        var n1=parseFloat(prompt("Enter 1 number "));
+        var op=prompt("Enter operator ");
+        var n2=parseFloat(prompt("Enter 2 number "));
+        var result;
+        switch (op)
+        {
+            case '+':
+                result=n1+n2;
+                document.getElemntById("ans").value=result;
+                break;
+
+        }
+    </script>
+    
+    <table border="1" style="font-size:40px;margin-left: auto;margin-right: auto;" cellpadding="10px" >
+        <tr>
+            <td colspan="4" >
+                <input type="text" style="height:50px;width: 350px;" id="ans">
+            </td>
+        </tr>
+        <tr>
+            <td id="e">
+                C
+            </td>
+            <td id="e">
+                +/-
+            </td>
+            <td id="e">
+                %
+            </td>
+            <td id="e">
+                /
+            </td>
+        </tr>
+        <tr>
+            <td id="e">
+                7
+            </td>
+            <td id="e">
+                8
+            </td>
+            <td id="e">
+                9
+            </td>
+            <td id="e">
+                x
+            </td>
+
+        </tr>
+        <tr>
+            <td id="e">
+                4
+            </td id="e">
+            <td id="e">
+                5
+            </td>
+            <td id="e">
+                6
+            </td>
+            <td id="e">
+                -
+            </td>
+
+        </tr>
+        <tr>
+            <td id="e">
+                1
+            </td >
+            <td id="e">
+                2
+            </td>
+            <td id="e">
+                3
+            </td>
+            <td id="e">
+                +
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="middle" id="e">
+                0
+            </td>
+            <td id="e">
+                .
+            </td>
+            <td id="e">
+                =
+            </td id="e">
+        </tr>
+    </table>
+</body>
+</html>
